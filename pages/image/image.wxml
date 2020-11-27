@@ -1,0 +1,16 @@
+<!--pages/image/image.wxml-->
+<text>pages/image/image.wxml</text>
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"></image>
+<view>------------------</view>
+<image wx:for="{{1}}"
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+bindload="handleImageLoad"
+lazy-load
+>
+</image>
+
+<image 
+show-menu-by-longpress
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg">
+</image>
